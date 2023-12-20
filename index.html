@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework2</title>
+</head>
+<body>
+    <h1>ENGLISH VOWEL : A E I O U</h1>
+    <input type="text"  id="text">
+    <button onclick="show()">Show result</button>
+    <p id="Result"></p>
+
+    <script>
+        function show(){
+            let text = document.getElementById('text').value;
+
+            if(text == ''){
+                alert('Please input Data');
+            }
+            else if ( text == "A"){
+                document.getElementById('Result').innerText = 'A is Vowel';
+            }
+            else if ( text == "E"){
+                document.getElementById('Result').innerText = 'E is Vowel';
+            }
+            else if ( text == "I"){
+                document.getElementById('Result').innerText = 'I is Vowel';
+            }
+            else if ( text == "O"){
+                document.getElementById('Result').innerText = 'O is Vowel';
+            }
+            else if ( text == "U"){
+                document.getElementById('Result').innerText = 'U is Vowel';
+            }
+            else {
+                document.getElementById('Result').innerText = text +  ' is not Vowel';
+            }
+        }
+    </script>
+</body>
+</html>
